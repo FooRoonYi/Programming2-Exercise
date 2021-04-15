@@ -1,7 +1,10 @@
 package quiz;
 
+import java.util.Scanner;
+
 public class CookingOil {
 	
+	Scanner sc = new Scanner(System.in);
 	String type;
 	String madeOf;
 	Float boilingPoint;
@@ -10,28 +13,34 @@ public class CookingOil {
 	int price;
 	
 	//create setter method
-	public void setType(String type) {
-		this.type = type;
+	public void setType() {
+		System.out.println("Type: ");
+		this.type = sc.nextLine();
 	}
 	
-	public void setMadeOf(String madeOf) {
-		this.madeOf = madeOf;
+	public void setMadeOf() {
+		System.out.print("It is made of:  ");
+		this.madeOf = sc.nextLine();
 	}
 	
-	public void setBP(float boilingPoint) {
-		this.boilingPoint = boilingPoint;
+	public void setBP() {
+		System.out.print("Boiling point:  ");
+		this.boilingPoint = sc.nextFloat();
 	}
 	
-	public void setSP(float smokingPoint) {
-		this.smokingPoint = smokingPoint;
+	public void setSP() {
+		System.out.print("Smoking Point:  " );
+		this.smokingPoint = sc.nextFloat();
 	}
 	
-	public void setDensity(double density) {
-		this.density = density;
+	public void setDensity() {
+		System.out.print("Density:  ");
+		this.density = sc.nextDouble();
 	}
 	
-	public void setPrice(int price) {
-		this.price = price;
+	public void setPrice() {
+		System.out.print("Price: ");
+		this.price = sc.nextInt();
 	}
 	
 	//create getter method
