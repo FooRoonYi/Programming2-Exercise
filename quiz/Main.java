@@ -17,7 +17,7 @@ public class Main {
 		oil.setDensity();
 		oil.setPrice();
 		
-		oil.gettype();
+		oil.getType();
 		oil.getMadeOf();
 		oil.getBoilingPoint();
 		oil.getSmokingPoint();
