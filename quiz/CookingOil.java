@@ -14,7 +14,7 @@ public class CookingOil {
 	
 	//create setter method
 	public void setType() {
-		System.out.println("Type: ");
+		System.out.print("Type: ");
 		this.type = sc.nextLine();
 	}
 	
@@ -44,7 +44,7 @@ public class CookingOil {
 	}
 	
 	//create getter method
-	public String gettype() {
+	public String getType() {
 		return this.type;
 	}
 	
