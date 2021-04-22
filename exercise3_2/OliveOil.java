@@ -16,9 +16,9 @@ public class OliveOil extends SunflowerOil{
 	
 	public String toString() {
 		return "Type = " + getType() +
-			   "Boiling Point = " + getBoilingPoint() +
-			   "Celcius\nSmoking Point = " + getSmokingPoint() +
-			   "Celcuis\nDensity = " + getDensity() + " kg/m3";
+		       "\nBoiling Point = " + getBoilingPoint() +
+		       "Celcius\nSmoking Point = " + getSmokingPoint() +
+		       "Celcuis\nDensity = " + getDensity() + " kg/m3";
 	}
 
 }
