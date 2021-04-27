@@ -21,6 +21,11 @@ public class Apple extends Fruit { //sub class of Fruit
 	}
 	
 	public void setInfo(String name, int q, double p) { //overloading method with parameters
+		if(name.equals(null))
+			name = " ";
+		else
+			name = name;
+		
 		if(q >= 0)
 			quantity = q;
 		else
@@ -45,9 +50,10 @@ public class Apple extends Fruit { //sub class of Fruit
 	}
 	
 	public String toString() { //overriding method
-		return "Quantity\t: " + quantity + 
-			   "\nPrice\t\t: RM " + price +
-			   "\nTotal Price\t: " + totalPrice();
+		return "Type\t\t\t\t: " + name + 
+			   "\nQuantity\t\t\t: " + quantity + 
+			   "\nPrice\t\t\t\t: RM " + price +
+			   "\nTotal Price\t\t\t: " + totalPrice();
 	}
 	
 }//end for class Apple extends Fruit

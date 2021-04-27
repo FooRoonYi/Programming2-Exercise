@@ -2,20 +2,23 @@ package exercise4_2;
 
 public class Fruit { //super class
 	
-	private String name;
+	protected String name;
 	
 	public Fruit() { //constructor for super class without parameter
 		name = " ";
 	}
 	
-	public Fruit(String name) { //constructor for super class with parameter
+	public Fruit(String n) { //constructor for super class with parameter
 		name = " ";
 		
-		setInfo(name);
+		setInfo(n);
 	}
 	
-	public void setInfo(String name) {
-		name = " ";
+	public void setInfo(String n) {
+		if(name.equals(null))
+			name = " ";
+		else
+			name = n;
 	}
 	
 	public String getName() {

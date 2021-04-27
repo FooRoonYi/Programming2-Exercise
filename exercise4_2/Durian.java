@@ -19,6 +19,11 @@ public class Durian extends Fruit{ //sub class of Fruit
 	}
 	
 	public void setInfo(String name, char t, int c) { //overloading method with parameters
+		if(name.equals(null))
+			name = " ";
+		else
+			name = name;
+		
 		if(c >= 0)
 			calories = c;
 		else 
@@ -34,8 +39,9 @@ public class Durian extends Fruit{ //sub class of Fruit
 	}
 	
 	public String toString() { //overriding method
-		return "Does the durian have thorns? : " + HasThorns() +
-				"\nCalories\t\t     : " + calories + " kcal";
+		return "Type\t\t\t\t: " + name + 
+			   "\nDoes the durian have thorns?\t: " + HasThorns() +
+			   "\nCalories\t\t\t: " + calories + " kcal";
 	}
 	
 } //end for Durian extends Fruit

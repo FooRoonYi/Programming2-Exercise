@@ -19,6 +19,11 @@ public class Mango extends Fruit{ //subclass of Fruit
 	}
 	
 	public void setInfo(String name, String s, int w) { //overloading method with parameters
+		if(name.equals(null))
+			name = " ";
+		else
+			name = name;
+		
 		if(w >= 0)
 			weight = w;
 		else 
@@ -34,8 +39,9 @@ public class Mango extends Fruit{ //subclass of Fruit
 	}
 	
 	public String toString() { //overriding method
-		return "Size of the mango\t: " + size +
-			   "\nWeight of " + size + " mango  : " + weight + " g";
+		return "Type\t\t\t\t: " + name +
+			   "\nSize of the mango\t\t: " + size +
+			   "\nWeight of " + size + " mango\t\t: " + weight + " g";
 	}
 	
 } //end for Mango extends Fruit

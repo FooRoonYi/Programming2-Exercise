@@ -21,6 +21,11 @@ public class GreenApple extends Apple{ //subclass of GreenApple
 	}
 	
 	public void setInfo(String name, int q, double p, String t, boolean d) { //overloading method with parameters
+		if(name.equals(null))
+			name = " ";
+		else
+			name = name;
+		
 		if(d == true)
 			difference = d;
 		else
@@ -41,10 +46,11 @@ public class GreenApple extends Apple{ //subclass of GreenApple
 	}
 	
 	public String toString() { //overriding method
-		return "Quantity    : " + quantity +
-			   "\nPrice       : RM " + price + 
-			   "\nTotal price : RM " + getCalprice() +
-			   "\nTaste       : " + taste + 
+		return "Type\t\t\t\t: " + name +
+			   "\nQuantity\t\t\t: " + quantity +
+			   "\nPrice\t\t\t\t: RM " + price + 
+			   "\nTotal price\t\t\t: RM " + getCalprice() +
+			   "\nTaste\t\t\t\t: " + taste + 
 			   "\nIs the green apple more sour than the red apple?: " + difference;
 	}
 	

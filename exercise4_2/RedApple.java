@@ -20,6 +20,11 @@ public class RedApple extends Apple { //subclass of Apple
 	}
 	
 	public void setInfo(String name, int q, double p, int pk, String c) { //overloading method with parameters
+		if(name.equals(null))
+			name = " ";
+		else
+			name = name;
+		
 		if(pk >= 0)
 			pack = pk;
 		else
@@ -39,11 +44,12 @@ public class RedApple extends Apple { //subclass of Apple
 	}
 
 	public String toString() { //overriding method
-		return "Quantity    : " + quantity +
-			   "\nOne pack    : " + pack + " apples" +
-			   "\nThere are " + pack + " apples in one pack." +
-			   "\nPrice       : RM " + price + " (per pack)" +
-			   "\nTotal price : RM " + calPrice() + " per pack";
+		return "Type\t\t\t\t: " + name +
+			   "\nQuantity\t\t\t: " + quantity +
+			   "\nOne pack\t\t\t: " + pack + " apples" +
+			   "\nPrice\t\t\t\t: RM " + price + " (per pack)" +
+			   "\nTotal price\t\t\t: RM " + calPrice() + " per pack" +
+			   "\nThere are " + pack + " apples in one pack.";
 	}
 	
 } //end for RedApple extends Apple
