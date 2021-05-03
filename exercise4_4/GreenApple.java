@@ -26,7 +26,7 @@ public class GreenApple extends Apple{
 	}
 	
 	public String printEvidence() { //overriding
-		return "\nThe pectin found in " + name.toUpperCase() + " can break down foos more efficiently.";
+		return "\nThe pectin found in " + name.toUpperCase() + " can break down foods more efficiently.";
 	}
 	
 	public String toString() { //overriding method
