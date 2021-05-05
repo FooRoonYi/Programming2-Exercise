@@ -51,7 +51,7 @@ public class Durian extends Fruit{
 	}
 	
 	public char HasThorns() {
-		return 'y';
+		return this.thorns;
 	}
 	
 	public String printEvidence() { //overriding
