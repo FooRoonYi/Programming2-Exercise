@@ -6,7 +6,7 @@ public class RedApple extends Apple { //subclass of Apple
 
 	public RedApple(String name, int q, double p,String c) { //constructor sub class with argument
 		super(name, q, p); //called method in superclass with passing parameter
-		this.colour = c;
+		colour = c;
 		
 	}
 	
